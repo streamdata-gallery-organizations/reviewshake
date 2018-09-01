@@ -1,9 +1,17 @@
+---
 swagger: "2.0"
 x-collection-name: Reviewshake
-x-complete: 1
+x-complete: 0
 info:
-  title: Reviewshake API
-  description: welcome-to-the-reviewshake-api-documentation-where-you-will-find-all-details-required-to-interact-with-our-api-in-order-to-make-calls-you-will-need-two-pieces-of-information1--your-reviewshake-subdomain-eg--demo-reviewshake-com2--your-api-key-see-the-authentication-section-below--authenticationyour-account-will-have-a-unique-api-key-associated-with-it-which-can-be-found-under--configurations----general-settings--in-your-dashboard-
+  title: Reviewshake Create widget
+  description: |-
+    You can create the following widget types:
+
+    1. List
+    2. Caroussel
+    3. Slider
+    4. Grid
+    5. Quote
   version: "1.0"
 host: subdomain.reviewshake.com
 basePath: /api/v1
@@ -80,51 +88,17 @@ paths:
           description: OK
       tags:
       - Widget
-  /widgets/1:
-    get:
-      summary: View widget
-      description: View widget.
-      operationId: Widgets1Get
-      x-api-path-slug: widgets1-get
-      parameters:
-      - in: header
-        name: Content-Type
-      - in: header
-        name: X-Spree-Token
-      responses:
-        200:
-          description: OK
-      tags:
-      - View
-      - Widget
-  /widgets/<id>:
-    put:
-      summary: Update widget
-      description: Update widget.
-      operationId: WidgetsIdPut
-      x-api-path-slug: widgetsid-put
-      parameters:
-      - in: header
-        name: Content-Type
-      - in: header
-        name: X-Spree-Token
-      responses:
-        200:
-          description: OK
-      tags:
-      - Widget
-    delete:
-      summary: Delete widget
-      description: Delete widget.
-      operationId: WidgetsIdDelete
-      x-api-path-slug: widgetsid-delete
-      parameters:
-      - in: header
-        name: Content-Type
-      - in: header
-        name: X-Spree-Token
-      responses:
-        200:
-          description: OK
-      tags:
-      - Widget
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

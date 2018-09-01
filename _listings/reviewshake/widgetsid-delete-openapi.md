@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: Reviewshake
-x-complete: 1
+x-complete: 0
 info:
-  title: Reviewshake API
-  description: welcome-to-the-reviewshake-api-documentation-where-you-will-find-all-details-required-to-interact-with-our-api-in-order-to-make-calls-you-will-need-two-pieces-of-information1--your-reviewshake-subdomain-eg--demo-reviewshake-com2--your-api-key-see-the-authentication-section-below--authenticationyour-account-will-have-a-unique-api-key-associated-with-it-which-can-be-found-under--configurations----general-settings--in-your-dashboard-
+  title: Reviewshake Delete widget
+  description: Delete widget.
   version: "1.0"
 host: subdomain.reviewshake.com
 basePath: /api/v1
@@ -128,3 +129,17 @@ paths:
           description: OK
       tags:
       - Widget
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
